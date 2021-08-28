@@ -4,8 +4,24 @@
             {{collection.company}}
             {{collection.name}}
             {{collection.following}}
+           ({{collection.login}}) 
            
         </div>
     </div> 
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-sm-3">
+                <img src="{{collection.avatar_url}}" class = "img-circle img-responsive" alt="profile-image">
+            </div>
+            <div class="col-sm-5">
+                <ul class="list-group">
+                    <li class="list-group-item" *ngIf="collection.bio">{{collection.bio}}</li>
+                    <li class="list-group-item" *ngIf="collection.hireable"> Available for hire{{collection.hireable}}</li>
+                    <li class="list-group-item" *ngIf="collection.blog">{{collection.blog}}</li>
+                    <li class="list-group-item" *ngIf="collection.email">{{collection.email}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
 </div>
