@@ -1,3 +1,16 @@
+<!-- <form>
+   <div class="form-group">
+       <input [(ngModel)]="githubUserQuery"name="user" type="search" class="form-control" placeholder="Github User">
+   </div>
+   <div>
+       <input type="submit" value="submit" class="btn btn-primary">
+   </div>
+  </form> -->
+  <form >
+      <input type="text" placeholder="search users"[(ngModel)]="username"name="username" (keyup)="findProfile()" >
+  </form>
+
+
 <div *ngIf = "collection">
     <div class="panel panel-default">
         <div class="panel-heading">

@@ -15,17 +15,21 @@ import { ProfileService } from 'src/app/services/profile.service';
 
 export class ProfileComponent implements OnInit {
 
- 
-
+ public githubUserQuery!:string;
+  username!:string;
   constructor(private profileService:ProfileService) {}
    collection=<any>{};
 
   ngOnInit(): void {
-    this.profileService.getProfileInfo().subscribe((result)=>{
-      console.warn(result)
-      this.collection=result
-    })
+  
     
   }
-
+  findProfile(){
+    this.profileService.updateProfile(this.username);
+    this.profileService.getProfileInfo().subscribe((result)=>{
+      console.warn(result)
+      this.collection=result;
+    })
+  }
+ 
 }
