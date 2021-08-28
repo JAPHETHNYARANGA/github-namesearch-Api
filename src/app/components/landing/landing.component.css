@@ -1,0 +1,17 @@
+span{
+    color:skyblue;
+}
+.landing-texts{
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%) ;
+    margin-top: 4rem;
+}
+h3{
+    font-size: 35px;
+    font-weight: 700;
+}
+.landing{
+    display:flex;
+    flex-direction: column;
+}
