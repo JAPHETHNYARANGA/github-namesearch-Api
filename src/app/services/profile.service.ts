@@ -7,5 +7,5 @@ import 'rxjs/add/operator/map'
 })
 export class ProfileService {
 
-  constructor() { }
+  constructor(private http:HttpClient) { }
 }
