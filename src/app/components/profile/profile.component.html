@@ -1,40 +1,29 @@
 <br><br><br>
 <div class="form-group">
-    <!-- <form >
-        <input type="text" placeholder="search users"[(ngModel)]="username"name="username" (keyup)="findProfile()" class="form-control" >
-    </form> -->
     <form >
-        <input type="text" placeholder="search users"[(ngModel)]="username"name="username" (ngSubmit)="findProfile()" class="form-control" >
-        <button class="btn btn-primary" type="submit">Get Users</button>
+        <input type="text" placeholder="search users"[(ngModel)]="username"name="username" (keyup)="findProfile()" class="form-control" >
     </form>
+   
 </div>
 <br><br><br>
 
 
-<div *ngIf = "collection">
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            {{collection.company}}
-            {{collection.name}}
-            {{collection.following}}
-           ({{collection.login}}) 
-           
-        </div>
-    </div> 
-    <div class="panel-body">
-        <div class="row">
-            <div class="col-sm-3">
-                <img src="{{collection.avatar_url}}" class = "img-circle img-responsive" alt="profile-image">
-            </div>
-            <div class="col-sm-5">
-                <ul class="list-group">
-                    <li class="list-group-item" *ngIf="collection.bio">{{collection.bio}}</li>
-                    <li class="list-group-item" *ngIf="collection.hireable"> Available for hire{{collection.hireable}}</li>
-                    <li class="list-group-item" *ngIf="collection.blog">{{collection.blog}}</li>
-                    <li class="list-group-item" *ngIf="collection.email">{{collection.email}}</li>
-                </ul>
-            </div>
-        </div>
+<div class="card" style="width: 18rem;" *ngIf = "collection" >
+    <img class="card-img-top" src="{{collection.avatar_url}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{collection.name}}</h5>
+      <p class="card-text">{{collection.bio}}.</p>
     </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">following:{{collection.following}}</li>
+      <li class="list-group-item">Email:{{collection.email}}</li>
+      <li class="list-group-item">Available for hire:{{collection.hireable}}</li>
+      <li class="list-group-item">Works for:{{collection.company}}</li>
+    </ul>
+    <div class="card-body">
+        <a href="{{collection.html_url}}" class="btn btn-primary">Repository</a>
+    </div>
+  </div>
 
-</div>
+
+
