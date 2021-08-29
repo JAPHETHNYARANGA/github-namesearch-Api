@@ -6,10 +6,18 @@
 </div>
 <br><br><br>
 
- 
 
 
-<div  *ngFor="let repo of repos">
-    {{repo.name}}
-    <a href="{{repo.html_url}}" class="btn btn-sm btn-warning" target="_blank">View project on github</a>
-</div>
+<div class="card text-center" *ngFor="let repo of repos">
+    <div class="card-header">
+      {{repo.name}}}
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Special title treatment</h5>
+      <p class="card-text">{{repo.description}}.</p>
+      <a href="{{repo.html_url}}" class="btn btn-primary">View project on github</a>
+    </div>
+    <div class="card-footer text-muted">
+      2 days ago
+    </div>
+  </div>
