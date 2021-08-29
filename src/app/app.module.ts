@@ -7,12 +7,18 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { ProfileService } from './services/profile.service';
 import { HttpClientModule } from '@angular/common/http'
 import { FormsModule } from '@angular/forms';
+import { LandingComponent } from './components/landing/landing.component';
+import { RepositoriesComponent } from './components/repositories/repositories.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProfileComponent
+    ProfileComponent,
+    LandingComponent,
+    RepositoriesComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
