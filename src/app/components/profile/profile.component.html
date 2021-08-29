@@ -11,7 +11,7 @@
 <div class="card" style="width: 18rem;" *ngIf = "collection" >
     <img class="card-img-top" src="{{collection.avatar_url}}" alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title">{{collection.name}}</h5>
+      <h5 class="card-title">{{collection.name | awesome }}</h5>
       <p class="card-text">{{collection.bio}}.</p>
     </div>
     <ul class="list-group list-group-flush">

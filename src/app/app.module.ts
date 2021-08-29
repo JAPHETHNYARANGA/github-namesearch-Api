@@ -11,6 +11,8 @@ import { LandingComponent } from './components/landing/landing.component';
 import { RepositoriesComponent } from './components/repositories/repositories.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { RepositoriesService } from './services/repositories.service';
+import { ColorPipe } from './color.pipe';
+import { ColorDirectiveDirective } from './color-directive.directive';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { RepositoriesService } from './services/repositories.service';
     ProfileComponent,
     LandingComponent,
     RepositoriesComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ColorPipe,
+    ColorDirectiveDirective
   ],
   imports: [
     BrowserModule,
