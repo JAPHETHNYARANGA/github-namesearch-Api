@@ -1,7 +1,11 @@
 <br><br><br>
 <div class="form-group">
-    <form >
+    <!-- <form >
         <input type="text" placeholder="search users Repositories"[(ngModel)]="username"name="username" (keyup)="getRepo()" class="form-control" >
+    </form> -->
+    <form >
+        <input type="text" placeholder="search users Repositories"[(ngModel)]="username"name="username" (ngSubmit)="getRepo()" class="form-control" >
+        <button class="btn btn-primary" type="submit">Get Repositories</button>
     </form>
 </div>
 <br><br><br>
@@ -9,11 +13,9 @@
 
 
 <div class="card text-center" *ngFor="let repo of repos">
-    <div class="card-header">
-      {{repo.name}}}
-    </div>
+    
     <div class="card-body">
-      <h5 class="card-title">Special title treatment</h5>
+      <h5 class="card-title">{{repo.name}}}</h5>
       <p class="card-text">{{repo.description}}.</p>
       <a href="{{repo.html_url}}" class="btn btn-primary">View project on github</a>
     </div>

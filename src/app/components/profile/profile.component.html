@@ -1,7 +1,11 @@
 <br><br><br>
 <div class="form-group">
-    <form >
+    <!-- <form >
         <input type="text" placeholder="search users"[(ngModel)]="username"name="username" (keyup)="findProfile()" class="form-control" >
+    </form> -->
+    <form >
+        <input type="text" placeholder="search users"[(ngModel)]="username"name="username" (ngSubmit)="findProfile()" class="form-control" >
+        <button class="btn btn-primary" type="submit">Get Users</button>
     </form>
 </div>
 <br><br><br>
