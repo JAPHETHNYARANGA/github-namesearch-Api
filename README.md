@@ -1,4 +1,40 @@
-# GithubApi
+# Gihbub Name Search Api App
+
+
+This is a project about implementing a github namesearch Api so that you can get github user details and repositories details from the app made.
+
+
+
+### Installation requirements
+To run this project as a developer you need :
+* An editor, eg Vscode, Atom, Sublime text etc .
+* Git installed in your computer.
+* Angular and nodejs installed.
+* Understanding basic git commands.
+
+## Technologies Used
+* HTML.
+* CSS.
+* Git.
+* Typescript
+* Bootstrap.
+* Angular
+* Github Api
+
+
+## Live site
+you can view live here : https://japhethnyaranga.github.io/github-namesearch-Api/
+
+## contact
+to contact the developer, you can email through: nyaranga4gmail.com
+
+
+## Author
+JAPHETH WYCLIFFE NYARANGA  
+
+# lincense And Copyright
+This project is under MIT licence
+Copyright(c)2021 @JAPHETH NYARANGA
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.14.
 
