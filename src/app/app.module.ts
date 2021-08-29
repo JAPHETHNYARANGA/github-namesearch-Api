@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { LandingComponent } from './components/landing/landing.component';
 import { RepositoriesComponent } from './components/repositories/repositories.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { RepositoriesService } from './services/repositories.service';
 
 
 @NgModule({
@@ -27,7 +28,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     FormsModule
    
   ],
-  providers: [ProfileService],
+  providers: [ProfileService, RepositoriesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

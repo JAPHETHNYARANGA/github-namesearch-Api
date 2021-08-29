@@ -1,1 +1,15 @@
-<p>repositories works!</p>
+<br><br><br>
+<div class="form-group">
+    <form >
+        <input type="text" placeholder="search users Repositories"[(ngModel)]="username"name="username" (keyup)="getRepo()" class="form-control" >
+    </form>
+</div>
+<br><br><br>
+
+ 
+
+
+<div  *ngFor="let repo of repos">
+    {{repo.name}}
+    <a href="{{repo.html_url}}" class="btn btn-sm btn-warning" target="_blank">View project on github</a>
+</div>
