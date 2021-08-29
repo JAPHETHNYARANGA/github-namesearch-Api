@@ -12,10 +12,10 @@
     <img class="card-img-top" src="{{collection.avatar_url}}" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">{{collection.name | awesome }}</h5>
-      <p class="card-text">{{collection.bio}}.</p>
+      <p appColorDirective class="card-text">{{collection.bio}}.</p>
     </div>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item">following:{{collection.following}}</li>
+      <li appColorDirective class="list-group-item">following:{{collection.following}}</li>
       <li class="list-group-item">Email:{{collection.email}}</li>
       <li class="list-group-item">Available for hire:{{collection.hireable}}</li>
       <li class="list-group-item">Works for:{{collection.company}}</li>
